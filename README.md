@@ -113,3 +113,5 @@ R - https://www.r-project.org/
 Phyloseq - https://github.com/joey711/phyloseq/
 
 MetagMisc - https://rdrr.io/github/vmikk/metagMisc/
+
+DOI - https://doi.org/10.5281/zenodo.3246535
