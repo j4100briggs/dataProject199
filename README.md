@@ -1,6 +1,6 @@
 # **DAMFish** 
 
-## **D**ata **A**nalysis of **B**acterial **M**icrobiome of **Fish**
+## ** D ** ata ** A ** nalysis of ** B ** acterial ** M ** icrobiome of ** Fish **
 (or any other species)
 ___
 Jordan Briggs (j4100briggs@yahoo.com), Sara Thornburgh (sarathornburgh@g.ucla.edu)
