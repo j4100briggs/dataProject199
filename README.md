@@ -1,6 +1,6 @@
 # **DAMFish** 
 
-## *D*ata *A*nalysis of Bacterial *M*icrobiome of *F*ish
+## Data Analysis of (bacterial) Microbiome of Fish
 (or any other species)
 ___
 Jordan Briggs (j4100briggs@yahoo.com), Sara Thornburgh (sarathornburgh@g.ucla.edu)
