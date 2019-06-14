@@ -1,16 +1,16 @@
-## **DAMFish** 
+# **DAMFish** 
 
 **D**ata **A**nalysis of **B**acterial **M**icrobiome of **Fish**
 (or any other species)
 ___
 Jordan Briggs (j4100briggs@yahoo.com), Sara Thornburgh (sarathornburgh@g.ucla.edu)
 ___
-**Introduction:**
+### **Introduction:**
 
 The purpose of the DAMFish program is to take an OTU file and a taxonomy file from [Qiime](http://qiime.org/) or [Qiime 2](https://qiime2.org/) and sort the data for making analysis of sequenced microbiome data easier and faster for researchers. The sequencing files are often incredibly large, making them incredibly difficult to organize and combine through visualizing apps such as Excel. The DAMFish program makes this process incredibly easy for researchers. The DAMFish program can not only sort a taxonomic file alphabetically created through Qiime or Qiime2, but can also help in expanding the taxon column into the full taxonomic rank of each bacteria species, and can even fill in unknown or undetermined ranks (these are empty cells or an incomplete taxonomic rank) with "unassigned". The DAMFish program will also sort the OTU file alphabetically, and combine both the complete taxonomic rank file and the OTU file so that the sequencing ID's match and all the available information for those bacteria species are easily viewable in the data file. The DAMFish program also has a separate [R](https://www.r-project.org/) program that can load the sorted OTU and taxonomy files, along with the metadata file the user provides, into a phyloseq object from the [Phyloseq](https://joey711.github.io/phyloseq/) package in R. This object is then ready to be analyzed by the user with whatever packages they wish to use in R.
 
 ___
-**Program Workflow:**
+### **Program Workflow:**
 
 1. The OTU file and the taxonomy file are inputted into the code using the command line.
 - If the taxonomy file does not have a complete taxonomic rank, the DAMFish program titled damfish_script_filler.sh will run the file through a while loop that adds "unassigned" into empty taxonomy breakdowns and split the single taxon column into a column each for Kingdom, Phylum, Class, Order, Family, Genus, and Species.
@@ -24,11 +24,11 @@ ___
 9. The three matrices are converted into one phyloseq object through the phyloseq object.
 The two programs are complete and are available to view and to analyze!
 
-NOTE: 
+###### NOTE: 
 - The combined OTU and taxonomy file is available for viewing to assist the program user when they are looking at their sequencing data.
 - The "phyloseq" object created using the phyloseq package enables a variety of options for visualizing and analyzing microbiome sequencing data.
 ___
-**Dependencies:**
+### **Dependencies:**
 
 This program will require Hoffman2 and R/3.4.0
 To use the program, go through these steps first to make sure your data files are compatible: 
@@ -52,7 +52,7 @@ remotes::install_github("vmikk/metagMisc")
 - WINDOWS: Using Atom, download the "Converting Line Endings to" package. Open both files, and then, under packages, click on the package and select Unix. Save the file.
 
 ___
-**Instructions:**
+### **Instructions:**
 
 
 **damfish_script_filler.sh:**
@@ -86,10 +86,10 @@ Rscript damfish_Rscript.R
 - The DAMFish R program will output the phyloseq object that contains the OTU file, taxonomy file, and the metadata file into a .tsv file called phyloseq_object.tsv for visualization. The phyloseq object will be found in the users' workspace if the code is run through R itself.
 
 
-NOTE: We included a script called damfish_RplotsSAMPLE.R in the [Vignette](https://github.com/j4100briggs/Fish-Gut-dataProject199/tree/master/Vignette) folder. This is an example of plots you can create using R with the phyloseq object created from the damfish_Rscript.R program. 
+###### NOTE: We included a script called damfish_RplotsSAMPLE.R in the [Vignette](https://github.com/j4100briggs/Fish-Gut-dataProject199/tree/master/Vignette) folder. This is an example of plots you can create using R with the phyloseq object created from the damfish_Rscript.R program. 
  
 ___
-**Vignette Instructions:**
+### **Vignette Instructions:**
 
 - Download the following data and the scripts, then load it into Hoffman2 (or clone this github repository): SAMPLEotu_table.tsv SAMPLEtaxonomy.tsv SAMPLEtaxonomy_filled.tsv
 - Use the following commands to test the scripts:
@@ -103,7 +103,7 @@ Rscript damfish_RscriptSAMPLE.R
 Rscript damfish_RplotsSAMPLE.R
 ```
 ___
-**References:**
+### **References:**
 
 Qiime - http://qiime.org/
 
